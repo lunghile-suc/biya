@@ -43,9 +43,9 @@ const beer = ({ beers }) => {
                 {/* map through the beers array and display each details of the beer */}
                 {beers.map(beer => {
                     return (
-                        <div className="grid grid-cols-2 p-4 mx-24 bg-gray-700 m-4 rounded">
+                        <div className="grid grid-cols-2 p-4 mx-24 bg-gray-700 m-4 rounded" key={beer.id}>
                             <div className="flex justify-center">
-                                <Image src={beer.image_url} width={300} height={500} />
+                                <Image src={beer.image_url} alt="beer image" width={300} height={500} />
                             </div>
                             <div className="p-4 text-gray-200">
                                 <h1 className="text-4xl overflow-hidden">{beer.name}</h1>
@@ -54,9 +54,9 @@ const beer = ({ beers }) => {
                                 <p>{beer.description}</p>
                                 <div className="pt-4">
                                     <h4 className="text-1xl pb-2">Food Pairings: </h4>
-                                    {beer.food_pairing.map(food => {
+                                    {beer.food_pairing.map((food, i) => {
                                         return (
-                                            <p>{food}</p>
+                                            <p key={i}>{food}</p>
                                         )
                                     })}
                                 </div>

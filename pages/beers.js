@@ -24,7 +24,7 @@ const beers = ({ data }) => {
                 {/* map through the beers api and display the beers*/}
                 {data.map(beer => {
                     return (
-                        <div className="grid grid-cols-2 p-4 mx-24 bg-gray-700 m-4 rounded">
+                        <div className="grid grid-cols-2 p-4 mx-24 bg-gray-700 m-4 rounded" key={beer.id}>
                             <div className="flex justify-center">
                                 <Image src={beer.image_url} width={300} height={500} />
                             </div>

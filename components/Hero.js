@@ -7,10 +7,10 @@ const Hero = () => {
                 {/* <h1 className="text-5xl overflow-hidden">Biya</h1> */}
                 <p className="my-8 text-lg">Welcome to BiyaBros <br></br> brewer in Johannesburg</p>
                 <h4 className="text-6xl w-8/12 font-extrabold overflow-hidden">ARE YOU OF LEGAL DRINKING AGE?</h4>
-                <Link href="/home"><a className="my-8 border-gray-300 border-b-4 inline-block pb-2">Yes I'm old enough</a></Link>
+                <Link href="/home" passHref><a className="my-8 border-gray-300 border-b-4 inline-block pb-2">Yes I&apos;m old enough</a></Link>
             </div>
             <div className="">
-                <video autoplay="true" loop="true" muted className="fixed h-screen object-fill top-0 right-0 left-2/4" height="500">
+                <video autoPlay="true" loop="true" muted className="fixed h-screen object-fill top-0 right-0 left-2/4" height="500">
                     <source src="/production ID_4718405.mp4"></source>
                 </video>
             </div>
